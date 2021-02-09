@@ -1,0 +1,1 @@
+The components in this folder are built and tested in isolation managing their own state internally based on props which are passed in.

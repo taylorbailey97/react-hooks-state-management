@@ -1,0 +1,39 @@
+.cssApp {
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.counterOutput {
+  font-size: 92px;
+  color: #368dda;
+}
+
+.comment {
+  font-size: 18px;
+  text-align: left;
+  background-color: #dadada;
+  padding: 6px 12px;
+}
+
+.box {
+  border: 4px solid #dadada;
+  margin: 12px;
+}
+
+input {
+  padding: 6px 12px;
+  max-width: 120px;
+  margin: 12px;
+  font-size: 24px;
+}
+
+button {
+  margin: 24px 12px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  border: 4px solid rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  width: 200px;
+  font-size: 20px;
+}
