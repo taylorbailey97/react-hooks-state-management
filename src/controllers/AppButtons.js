@@ -18,6 +18,16 @@ function AppButtons() {
         backgroundColor="#922428"
         clickHandler={() => dispatch({ type: "DECREMENT" })}
       />
+      <CounterButton
+        label="Multiply"
+        backgroundColor="#3e9651"
+        clickHandler={() => dispatch({ type: "MULTIPLY" })}
+      />
+      <CounterButton
+        label="Divide"
+        backgroundColor="#922428"
+        clickHandler={() => dispatch({ type: "DIVIDE" })}
+      />
     </div>
   );
 }

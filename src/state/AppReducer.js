@@ -1,7 +1,9 @@
 const appInitialState = {
   count: 100,
   inc: 10,
-  dec: 5
+  dec: 5,
+  mul: 2,
+  div: 2
 };
 
 const appReducer = (state, action) => {
@@ -18,6 +20,14 @@ const appReducer = (state, action) => {
     }
     case "DECREMENT": {
       change.count -= state.dec;
+      break;
+    }
+    case "MULTIPLY": {
+      change.count *= state.mul;
+      break;
+    }
+    case "DIVIDE": {
+      state.div /= change.count;
       break;
     }
     default: {

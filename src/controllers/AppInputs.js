@@ -15,7 +15,7 @@ function AppInputs() {
         label="Increment"
         value={state.inc}
         color="#3e9651"
-        changeHandler={e =>
+        changeHandler={(e) =>
           dispatch({
             type: "CHANGE_VALUE",
             data: { which: "inc", value: e.target.value }
@@ -26,10 +26,32 @@ function AppInputs() {
         label="Decrement"
         value={state.dec}
         color="#922428"
-        changeHandler={e =>
+        changeHandler={(e) =>
           dispatch({
             type: "CHANGE_VALUE",
             data: { which: "dec", value: e.target.value }
+          })
+        }
+      />
+      <CounterInput
+        label="Multiply"
+        value={state.mul}
+        color="#3e9651"
+        changeHandler={(e) =>
+          dispatch({
+            type: "MULTIPLY",
+            data: { which: "mul", value: e.target.value }
+          })
+        }
+      />
+      <CounterInput
+        label="Divide"
+        value={state.div}
+        color="#922428"
+        changeHandler={(e) =>
+          dispatch({
+            type: "DIVIDE",
+            data: { which: "div", value: e.target.value }
           })
         }
       />
