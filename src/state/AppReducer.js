@@ -27,7 +27,7 @@ const appReducer = (state, action) => {
       break;
     }
     case "DIVIDE": {
-      state.div /= change.count;
+      change.count /= state.div;
       break;
     }
     default: {

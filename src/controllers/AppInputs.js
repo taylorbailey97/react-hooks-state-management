@@ -39,7 +39,7 @@ function AppInputs() {
         color="#3e9651"
         changeHandler={(e) =>
           dispatch({
-            type: "MULTIPLY",
+            type: "CHANGE_VALUE",
             data: { which: "mul", value: e.target.value }
           })
         }
@@ -50,7 +50,7 @@ function AppInputs() {
         color="#922428"
         changeHandler={(e) =>
           dispatch({
-            type: "DIVIDE",
+            type: "CHANGE_VALUE",
             data: { which: "div", value: e.target.value }
           })
         }
